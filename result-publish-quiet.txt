@@ -1,0 +1,223 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.newtonica:cucu >-------------------------
+[INFO] Building cucu 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ cucu ---
+[INFO] Deleting C:\Users\Administrator\eclipse-workspace\cucumtest\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cucu ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.9.0:compile (default-compile) @ cucu ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cucu ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.9.0:testCompile (default-testCompile) @ cucu ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to C:\Users\Administrator\eclipse-workspace\cucumtest\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ cucu ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.newtonica.cucu.RunCucumberTest
+
+@rule1
+Scenario: Scenario1 of Rule1                     # com/newtonica/cucu/demo.feature:13
+Common for all scenarios1
+  Given I have this common for scenarios1        # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_scenarios1()
+Common for all scenarios2
+  Given I have this common for scenarios2        # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_scenarios2()
+	Common for all scenarios under first rule
+  Given I have this common for first rule        # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_specific_rule(java.lang.String)
+		I want to write a step with precondition
+  Given I want to write a step with precondition # com.newtonica.cucu.stepdef.DemoStepDef.i_want_to_write_a_step_with_precondition()
+		I complete action
+  When I complete action                         # com.newtonica.cucu.stepdef.DemoStepDef.i_complete_action()
+		I validate the outcomes
+  Then I validate the outcomes                   # com.newtonica.cucu.stepdef.DemoStepDef.i_validate_the_outcomes()
+
+@rule1
+Scenario: Scenario2 of Rule1                     # com/newtonica/cucu/demo.feature:18
+Common for all scenarios1
+  Given I have this common for scenarios1        # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_scenarios1()
+Common for all scenarios2
+  Given I have this common for scenarios2        # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_scenarios2()
+	Common for all scenarios under first rule
+  Given I have this common for first rule        # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_specific_rule(java.lang.String)
+		I want to write a step with precondition
+  Given I want to write a step with precondition # com.newtonica.cucu.stepdef.DemoStepDef.i_want_to_write_a_step_with_precondition()
+		I complete action
+  When I complete action                         # com.newtonica.cucu.stepdef.DemoStepDef.i_complete_action()
+		I validate the outcomes
+  Then I validate the outcomes                   # com.newtonica.cucu.stepdef.DemoStepDef.i_validate_the_outcomes()
+
+@rule2
+Scenario: Scenario1 of Rule2                     # com/newtonica/cucu/demo.feature:29
+Common for all scenarios1
+  Given I have this common for scenarios1        # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_scenarios1()
+Common for all scenarios2
+  Given I have this common for scenarios2        # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_scenarios2()
+	Common for all scenarios under second rule
+  Given I have this common for second rule       # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_specific_rule(java.lang.String)
+		I want to write a step with precondition
+  Given I want to write a step with precondition # com.newtonica.cucu.stepdef.DemoStepDef.i_want_to_write_a_step_with_precondition()
+		I complete action
+  When I complete action                         # com.newtonica.cucu.stepdef.DemoStepDef.i_complete_action()
+		I validate the outcomes
+  Then I validate the outcomes                   # com.newtonica.cucu.stepdef.DemoStepDef.i_validate_the_outcomes()
+
+@rule2
+Scenario: Scenario2 of Rule2                     # com/newtonica/cucu/demo.feature:34
+Common for all scenarios1
+  Given I have this common for scenarios1        # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_scenarios1()
+Common for all scenarios2
+  Given I have this common for scenarios2        # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_scenarios2()
+	Common for all scenarios under second rule
+  Given I have this common for second rule       # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_specific_rule(java.lang.String)
+		I want to write a step with precondition
+  Given I want to write a step with precondition # com.newtonica.cucu.stepdef.DemoStepDef.i_want_to_write_a_step_with_precondition()
+		I complete action
+  When I complete action                         # com.newtonica.cucu.stepdef.DemoStepDef.i_complete_action()
+		I validate the outcomes
+  Then I validate the outcomes                   # com.newtonica.cucu.stepdef.DemoStepDef.i_validate_the_outcomes()
+
+@rule3
+Scenario: Scenario1 of Rule3              # com/newtonica/cucu/demo.feature:45
+Common for all scenarios1
+  Given I have this common for scenarios1 # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_scenarios1()
+Common for all scenarios2
+  Given I have this common for scenarios2 # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_scenarios2()
+	Common for all scenarios under third rule
+  Given I have this common for third rule # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_specific_rule(java.lang.String)
+I had 10 candies
+  Given I had 10 candies                  # com.newtonica.cucu.stepdef.DemoStepDef.i_had_candies(java.lang.Integer)
+I tasted 2 out of 10 candies
+  When I tasted 2 out of it               # com.newtonica.cucu.stepdef.DemoStepDef.i_tasted_out_of_it(java.lang.Integer)
+I should have 8 remaining candies
+  Then I should have 8 remaining          # com.newtonica.cucu.stepdef.DemoStepDef.i_should_have_remaining(java.lang.Integer)
+
+@rule3
+Scenario: Scenario2 of Rule3              # com/newtonica/cucu/demo.feature:50
+Common for all scenarios1
+  Given I have this common for scenarios1 # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_scenarios1()
+Common for all scenarios2
+  Given I have this common for scenarios2 # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_scenarios2()
+	Common for all scenarios under third rule
+  Given I have this common for third rule # com.newtonica.cucu.stepdef.DemoStepDef.i_have_this_common_for_specific_rule(java.lang.String)
+I had 10 candies
+  Given I had 10 candies                  # com.newtonica.cucu.stepdef.DemoStepDef.i_had_candies(java.lang.Integer)
+I tasted 5 out of 10 candies
+  When I tasted 5 out of it               # com.newtonica.cucu.stepdef.DemoStepDef.i_tasted_out_of_it(java.lang.Integer)
+I should have 5 remaining candies
+  Then I should have 5 remaining          # com.newtonica.cucu.stepdef.DemoStepDef.i_should_have_remaining(java.lang.Integer)
+
+S@imp @ddg
+Scenario: Search web for something using duckduckgo # com/newtonica/cucu/googlesearch.feature:5
+LF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 59431
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 16, 2022 2:05:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 16, 2022 2:05:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 97
+Mar 16, 2022 2:05:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 97
+  Given I am on duckduckgo home page                # com.newtonica.cucu.stepdef.StepDefinitions.i_am_on_duckduckgo_home_page()
+  When I search for "funny"                         # com.newtonica.cucu.stepdef.StepDefinitions.i_search_for(java.lang.String)
+  Then title should start with "funny"              # com.newtonica.cucu.stepdef.StepDefinitions.title_should_start_with(java.lang.String)
+
+S@imp @google
+Scenario: Search web for something using google # com/newtonica/cucu/googlesearch.feature:11
+tarting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 54443
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 16, 2022 2:05:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 16, 2022 2:05:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 97
+Mar 16, 2022 2:05:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 97
+  Given I am on google home page                # com.newtonica.cucu.stepdef.StepDefinitions.i_am_on_google_home_page()
+  When I search for "funny"                     # com.newtonica.cucu.stepdef.StepDefinitions.i_search_for(java.lang.String)
+  Then title should start with "funny"          # com.newtonica.cucu.stepdef.StepDefinitions.title_should_start_with(java.lang.String)
+
+Scenario: Title of your scenario      # com/newtonica/cucu/states.feature:4
+  Given I have a context with data 10 # com.newtonica.cucu.stepdef.StatesStepDef.i_have_a_context_with_data(java.lang.Integer)
+  And I want to use that data here    # com.newtonica.cucu.stepdef.StatesStepDef.i_want_to_use_that_data_here()
+  And I want to use it further        # com.newtonica.cucu.stepdef.StatesStepDef.i_want_to_use_it_furthre()
+I complete action with 13
+  When I complete action on           # com.newtonica.cucu.stepdef.StatesStepDef.i_complete_action()
+  Then validate the outcomes          # com.newtonica.cucu.stepdef.StatesStepDef.validate_the_outcomes()
+
+@template1
+Scenario Outline: Title of your scenario outline # com/newtonica/cucu/tags.feature:11
+Mar 16, 2022 2:05:18 PM com.newtonica.cucu.stepdef.TagStepDefinitions i_want_to_write_a_step_with_test4
+INFO: test1
+  Given I want to  write a step with test1       # com.newtonica.cucu.stepdef.TagStepDefinitions.i_want_to_write_a_step_with_test4(java.lang.String)
+Mar 16, 2022 2:05:18 PM com.newtonica.cucu.stepdef.TagStepDefinitions i_check_for_the_in_step
+INFO: 100
+  When I check for the 100 in step               # com.newtonica.cucu.stepdef.TagStepDefinitions.i_check_for_the_in_step(java.lang.Integer)
+Mar 16, 2022 2:05:18 PM com.newtonica.cucu.stepdef.TagStepDefinitions i_verify_the_success_in_step
+INFO: success
+  Then I verify the success in step              # com.newtonica.cucu.stepdef.TagStepDefinitions.i_verify_the_success_in_step(java.lang.String)
+
+@template1
+Scenario Outline: Title of your scenario outline # com/newtonica/cucu/tags.feature:12
+Mar 16, 2022 2:05:18 PM com.newtonica.cucu.stepdef.TagStepDefinitions i_want_to_write_a_step_with_test4
+INFO: test2
+  Given I want to  write a step with test2       # com.newtonica.cucu.stepdef.TagStepDefinitions.i_want_to_write_a_step_with_test4(java.lang.String)
+Mar 16, 2022 2:05:18 PM com.newtonica.cucu.stepdef.TagStepDefinitions i_check_for_the_in_step
+INFO: 200
+  When I check for the 200 in step               # com.newtonica.cucu.stepdef.TagStepDefinitions.i_check_for_the_in_step(java.lang.Integer)
+Mar 16, 2022 2:05:18 PM com.newtonica.cucu.stepdef.TagStepDefinitions i_verify_the_success_in_step
+INFO: success
+  Then I verify the success in step              # com.newtonica.cucu.stepdef.TagStepDefinitions.i_verify_the_success_in_step(java.lang.String)
+
+@template1
+Scenario Outline: Title of your scenario outline # com/newtonica/cucu/tags.feature:13
+Mar 16, 2022 2:05:18 PM com.newtonica.cucu.stepdef.TagStepDefinitions i_want_to_write_a_step_with_test4
+INFO: test3
+  Given I want to  write a step with test3       # com.newtonica.cucu.stepdef.TagStepDefinitions.i_want_to_write_a_step_with_test4(java.lang.String)
+Mar 16, 2022 2:05:18 PM com.newtonica.cucu.stepdef.TagStepDefinitions i_check_for_the_in_step
+INFO: 300
+  When I check for the 300 in step               # com.newtonica.cucu.stepdef.TagStepDefinitions.i_check_for_the_in_step(java.lang.Integer)
+Mar 16, 2022 2:05:18 PM com.newtonica.cucu.stepdef.TagStepDefinitions i_verify_the_success_in_step
+INFO: failure
+  Then I verify the failure in step              # com.newtonica.cucu.stepdef.TagStepDefinitions.i_verify_the_success_in_step(java.lang.String)
+
+@template1
+Scenario Outline: Title of your scenario outline # com/newtonica/cucu/tags.feature:14
+Mar 16, 2022 2:05:18 PM com.newtonica.cucu.stepdef.TagStepDefinitions i_want_to_write_a_step_with_test4
+INFO: test4
+  Given I want to  write a step with test4       # com.newtonica.cucu.stepdef.TagStepDefinitions.i_want_to_write_a_step_with_test4(java.lang.String)
+Mar 16, 2022 2:05:18 PM com.newtonica.cucu.stepdef.TagStepDefinitions i_check_for_the_in_step
+INFO: 400
+  When I check for the 400 in step               # com.newtonica.cucu.stepdef.TagStepDefinitions.i_check_for_the_in_step(java.lang.Integer)
+Mar 16, 2022 2:05:18 PM com.newtonica.cucu.stepdef.TagStepDefinitions i_verify_the_success_in_step
+INFO: success
+  Then I verify the success in step              # com.newtonica.cucu.stepdef.TagStepDefinitions.i_verify_the_success_in_step(java.lang.String)
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.141 s - in com.newtonica.cucu.RunCucumberTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.501 s
+[INFO] Finished at: 2022-03-16T14:05:19+05:30
+[INFO] ------------------------------------------------------------------------
