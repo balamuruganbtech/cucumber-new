@@ -1,0 +1,17 @@
+Dry-run:
+---------
+clean test -Dcucumber.execution.dry-run=true
+
+Publish-quiet:
+--------------
+clean test -Dcucumber.publish.quiet=true
+
+Filter Tags:
+-------------
+clean test -Dcucumber.filter.tags=@template1
+clean test -Dcucumber.filter.tags=@rule1
+
+
+reports:
+--------
+clean test -Dcucumber.filter.tags=@args6 -Dcucumber.plugin=html:reports/report.html
